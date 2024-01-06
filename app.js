@@ -25,16 +25,15 @@ function sendData(){
         body: JSON.stringify(productData)
     })
     .then(res => {
-        console.log(res);
+       alert("عملیات با موفقیت انجام شد");
         clearData()
     })
-    .catch(err => console.log(err))
+    .catch(err => alert(err))
 
    
 }
 
 function clearData(){
-    name.value = ""
     price.value = ""
 }
 
